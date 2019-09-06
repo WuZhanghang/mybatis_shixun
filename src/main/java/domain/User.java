@@ -10,6 +10,7 @@ import java.util.List;
 @Data
 public class User {
     private Integer id;
+    private String xuexiao;
     private String username;
     private Date birthday;
     private String address;
