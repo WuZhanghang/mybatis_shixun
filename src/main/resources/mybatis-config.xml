@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybaits.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="db.properties" />
+
+
+    <settings >
+        <setting name="logImpl" value="LOG4J" />
+        <!--开启延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
+    <!-- 为java pojo类型设置一个简短名字 -->
+    <typeAliases>
+        <package name="domain" />
+
+    </typeAliases>
+
+
+
+    <!-- 配置环境 -->
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}" />
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!-- 配置了Mapper信息 -->
+   <mappers>
+       <mapper resource="sqlmapping/UserDao.xml"/>
+       <mapper resource="sqlmapping/accountDao.xml"/>
+
+   </mappers>
+
+
+
+</configuration>

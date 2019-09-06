@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.UserDao">
+
+
+
+    <select id="findById" parameterType="Integer" resultType="user">
+        select * from user where id = #{id}
+    </select>
+
+
+    <select id="findUsersWithAccounts2" resultMap="findUsersWithAccountsMap2">
+        select  * from user
+         </select>
+  <resultMap id="findUsersWithAccountsMap2" type="domain.User">
+      <id property="id" column="id"/>        
+      <result property="username" column="username"/>        
+      <result property="sex" column="sex"/>       
+      <result property="birthday" column="birthday"/>        
+      <result property="address" column="address"/>
+      <collection property="accounts" ofType="domain.Account" select="dao.AccountDao.findByUid" column="id">
+
+      </collection>
+      
+  </resultMap>
+
+</mapper>
