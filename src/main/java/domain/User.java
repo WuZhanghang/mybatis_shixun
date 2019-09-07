@@ -19,5 +19,5 @@ public class User {
     private List<Account> accounts;
     private java.awt.List abc;
 
-    aaaa
+   
 }
