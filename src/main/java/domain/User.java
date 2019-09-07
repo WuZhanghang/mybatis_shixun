@@ -26,17 +26,5 @@ public class User {
 
    private String cat;
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", school='" + school + '\'' +
-                ", email='" + email + '\'' +
-                ", username='" + username + '\'' +
-                ", birthday=" + birthday +
-                ", address='" + address + '\'' +
-                ", sex='" + sex + '\'' +
-                ", accounts=" + accounts +
-                '}';
-    }
+ 
 }
