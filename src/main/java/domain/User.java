@@ -18,7 +18,8 @@ public class User {
     private String sex;
     private List<Account> accounts;
 
-    public say(){
+    public void say(){
+        System.out.println("aloha");
     }
 
 
