@@ -18,6 +18,10 @@ public class User {
     private String sex;
     private List<Account> accounts;
 
+    public say(){
+    }
+
+
 
     @Override
     public String toString() {
