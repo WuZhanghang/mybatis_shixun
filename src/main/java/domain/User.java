@@ -11,7 +11,7 @@ import java.util.List;
 public class User {
     private Integer id;
     private String school;
-
+    private String email;
     private String username;
     private Date birthday;
     private String address;

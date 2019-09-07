@@ -38,7 +38,7 @@
    <mappers>
        <mapper resource="sqlmapping/UserDao.xml"/>
        <mapper resource="sqlmapping/accountDao.xml"/>
-
+       <mapper class="dao.IAnnoUserDao.class"/>
    </mappers>
 
 
