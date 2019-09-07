@@ -18,7 +18,7 @@ public class User {
     private String sex;
     private List<Account> accounts;
     private String dog;
-    
+
 
     public void say(){
         System.out.println("aloha");
