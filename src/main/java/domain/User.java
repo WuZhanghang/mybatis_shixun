@@ -17,7 +17,7 @@ public class User {
     private String address;
     private String sex;
     private List<Account> accounts;
-    private java.awt.List abc;
+
 
    
 }
