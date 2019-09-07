@@ -22,7 +22,7 @@ public class User {
         System.out.println("aloha");
     }
 
-
+   private String cat;
 
     @Override
     public String toString() {
