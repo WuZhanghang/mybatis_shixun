@@ -19,6 +19,7 @@ public class User {
     private List<Account> accounts;
 
     public say(){
+        print(hello);
     }
 
 
