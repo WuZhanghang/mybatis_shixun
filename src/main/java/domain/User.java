@@ -10,21 +10,12 @@ import java.util.List;
 @Data
 public class User {
     private Integer id;
-    private String school;
-    private String email;
     private String username;
     private Date birthday;
     private String address;
     private String sex;
     private List<Account> accounts;
-    private String dog;
 
 
-    public void say(){
-        System.out.println("aloha");
-    }
 
-   private String cat;
-
- 
 }
